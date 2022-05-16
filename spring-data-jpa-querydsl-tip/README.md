@@ -1,13 +1,13 @@
 # Spring Data Jpa 환경에서 QueryDSL을 사용할 때 Tip
 
-(1) IntelliJ에서 QClass가 인식되지 않는 경우  
+### (1) IntelliJ에서 QClass가 인식되지 않는 경우  
 
 언제서부터인가 IntelliJ에서 QueryDSL 전용 QClass를 못찾는 현상이 발생했다.  
 아니면 원래 Kotlin - QueryDSL 환경은 다른지도 모르겠다. Java - QueryDSL에선 이런 설정을 한 기억이 없는 것 같다.   
 이럴 땐 아래와 같이 컴파일 된 QClass가 존재하는 디렉터리를 Source Folders로 지정해주면 된다.  
 ![img_2.png](img_2.png)
 
-(2) 검색 조건에 따라서 동적인 Boolean Expression 만들기  
+### (2) 검색 조건에 따라서 동적인 Boolean Expression 만들기  
 아래와 같은 검색 필터가 있는 경우 보통 각 프로퍼티가 null이 아닌지 조사해서 and로 연결한다.
 ```kotlin
 class IssuePaginateCriteria(
@@ -91,3 +91,45 @@ QueryDSL은 predicate가 null인 것도 허용 한다.
             .offset(pageRequest.offset)
             .orderBy(iu.key.desc())
 ```
+
+### (3) LIKE 검색 시 contains 메서드와 like 함수의 차이점     
+like는 %%를 양쪽에 알아서 붙여주지 않는다.  
+반면 contains는 양쪽에 붙여준다.  
+
+like는 _, %에 대한 escape 처리가 되어있지 않다.  
+contains는 escape 처리가 되어있다.   
+```kotlin
+ internal fun getPredicates(
+        criteria: IssuePaginateCriteria,
+        iu: QIssue,
+    ): List<BooleanExpression> {
+        return listOfNotNull(
+            criteria.id?.let { iu.id.eq(it) },
+            criteria.name?.let { iu.name.containsIgnoreCase(it) },
+            criteria.status?.let { iu.status.likeIgnoreCase("%$it%") },
+            criteria.description?.let { iu.description.likeIgnoreCase(it.likeEscape(), '\\') },
+        )
+    }
+```
+
+여기서 escape는 서비스 환경에 따라 원치않는 결과를 반환할 수 있어 웬만하면 처리해주는 것이 좋다.  
+
+아래와 같이 데이터가 있을 때
+
+| key   | 이름    |
+| ----- | ------ |
+| 1     | 이름_1  |
+| 2     | 이름 2  |
+
+이런 쿼리를 날리면 두 행이 모두 나온다.  
+```sql
+select * from usr_user where name like '%이름_%'
+```
+
+그래서 아래와 같이 escape 문자를 지정해주는 처리가 필요하다.  
+```sql
+select * from usr_user where name like '%이름\_%' escape '\'
+```
+
+QueryDSL의 contains는 JPQLTemplates에 의해 아래와 같이 등록된 Operation을 사용한다.
+![img_4.png](img_4.png)
