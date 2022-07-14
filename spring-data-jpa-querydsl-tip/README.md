@@ -216,4 +216,10 @@ private fun SetPath<String, StringPath>.containsIgnoreCase(value: String) =
     Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%') escape '!'", this, "!${value.lowercase()}")
 ```
 
+List, Set 등 다양한 컬렉션을 쓸 것을 생각한다면 아래와 같이 제네릭 확장함수를 사용하면 된다. 
+```kotlin
+fun <T: Collection<E>, E> CollectionExpression<T, E>.containsIgnoreCase(value: String) =
+    Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%') escape '!'", this, "!${value.lowercase()}")
+```
+
 당연하지만 규모가 커지면 구조적인 개선이 반드시 필요하다.
