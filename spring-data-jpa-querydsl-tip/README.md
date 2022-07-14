@@ -133,3 +133,87 @@ select * from usr_user where name like '%이름\_%' escape '\'
 
 QueryDSL의 contains는 JPQLTemplates에 의해 아래와 같이 등록된 Operation을 사용한다.
 ![img_4.png](img_4.png)
+
+
+### (4) SetPath<String> or ListPath<String> 필드에 like 조건 걸기.
+
+아래와 같이 JSON 데이터를 Converter를 통해 관리하는 Entity가 있을 때  
+```kotlin
+@Entity(name = "Member")
+@Table(name = "MEMBER")
+class Member(
+    @Id
+    @Column(name = "MEMBER_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val key: Long = 0L,
+
+    @NaturalId
+    @Column(name = "ID", length = 128, unique = true, nullable = false)
+    val id: String,
+
+    @Column(name = "NAME", length = 256, nullable = false)
+    val name: String,
+
+    @Convert(converter = StringListConverter::class)
+    @Column(name = "HOBBIES", columnDefinition = "TEXT", nullable = false)
+    val hobbies: Set<String>
+)
+```
+hobbies를 대상으로 LIKE 쿼리를 날린다면 아래와 같이 contains 메서드를 쓸 수 있을 것 같이 보인다.  
+```kotlin
+internal fun getPredicates(
+    criteria: MemberPaginateCriteria,
+    mb: QMember,
+): List<BooleanExpression> {
+    return listOfNotNull(
+        criteria.name?.let {
+            mb.name.containsIgnoreCase(it)
+        },
+        criteria.hobby?.let {
+            mb.hobbies.contains(it)
+        },
+    )
+}
+```
+하지만 아래와 같이 HqlSqlBaseWalker에서 NPE가 발생한다.  
+![img_5.png](img_5.png)  
+
+어찌보면 당연하다 HQL은 Converter 정보를 보고 쿼리를 빌드하는 것이 아니라 필드의 타입을 볼테니.  
+이럴땐 BooleanExpression을 직접 생성해주면 된다.  
+```kotlin
+internal fun getPredicates(
+    criteria: MemberPaginateCriteria,
+    mb: QMember,
+): List<BooleanExpression> {
+    return listOfNotNull(
+        criteria.name?.let {
+            mb.name.containsIgnoreCase(it)
+        },
+        criteria.hobby?.let {
+            Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%')", mb.hobbies, it.lowercase())
+        },
+    )
+}
+```
+
+여기서 확장함수로 빼내면 좀 더 보기좋은 코드가 나온다.  
+```kotlin
+internal fun getPredicates(
+    criteria: MemberPaginateCriteria,
+    mb: QMember,
+): List<BooleanExpression> {
+    return listOfNotNull(
+        criteria.name?.let {
+            mb.name.containsIgnoreCase(it)
+        },
+        criteria.hobby?.let {
+            mb.hobbies.containsIgnoreCase(it)
+        },
+    )
+}
+
+private fun SetPath<String, StringPath>.containsIgnoreCase(value: String)
+    = Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%')", this, value.lowercase())
+```
+
+당연하지만 규모가 커지면 구조적인 개선이 반드시 필요하다.
