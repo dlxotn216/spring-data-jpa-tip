@@ -190,7 +190,7 @@ internal fun getPredicates(
             mb.name.containsIgnoreCase(it)
         },
         criteria.hobby?.let {
-            Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%')", mb.hobbies, it.lowercase())
+            Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%') escape '!'", mb.hobbies, it.lowercase())
         },
     )
 }
@@ -212,8 +212,8 @@ internal fun getPredicates(
     )
 }
 
-private fun SetPath<String, StringPath>.containsIgnoreCase(value: String)
-    = Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%')", this, value.lowercase())
+private fun SetPath<String, StringPath>.containsIgnoreCase(value: String) =
+    Expressions.booleanTemplate("lower({0}) like concat('%', {1}, '%') escape '!'", this, "!${value.lowercase()}")
 ```
 
 당연하지만 규모가 커지면 구조적인 개선이 반드시 필요하다.
