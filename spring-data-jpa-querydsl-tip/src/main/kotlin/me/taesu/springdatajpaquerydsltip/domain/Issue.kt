@@ -12,11 +12,11 @@ import javax.persistence.*
  * @version ConsentV3 v1.0 wB202203
  * @since ConsentV3 v1.0 wB202203
  */
-@Entity(name = "Consent")
-@Table(name = "CON_CONSENT")
+@Entity(name = "Issue")
+@Table(name = "ISSUE")
 class Issue(
     @Id
-    @Column(name = "CONSENT_KEY")
+    @Column(name = "ISSUE_KEY")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val key: Long = 0L,
 
