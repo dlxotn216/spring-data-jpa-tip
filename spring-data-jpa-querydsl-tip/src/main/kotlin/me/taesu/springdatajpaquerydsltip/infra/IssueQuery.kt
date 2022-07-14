@@ -1,7 +1,7 @@
 package me.taesu.springdatajpaquerydsltip.infra
 
+import me.taesu.springdatajpaquerydsltip.infra.impl.IssuePaginateCriteria
 import me.taesu.springdatajpaquerydsltip.infra.impl.IssueQueryResult
-import me.taesu.springdatajpaquerydsltip.interfaces.IssuePaginateCriteria
 import org.springframework.data.domain.Page
 
 /**

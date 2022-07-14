@@ -3,6 +3,7 @@ package me.taesu.springdatajpaquerydsltip.infra.impl
 import com.querydsl.core.types.ConstructorExpression
 import com.querydsl.core.types.Projections
 import me.taesu.springdatajpaquerydsltip.domain.QIssue
+import me.taesu.springdatajpaquerydsltip.interfaces.PageableCriteria
 
 /**
  * Created by itaesu on 2022/05/16.
@@ -33,3 +34,12 @@ class IssueQueryResult(
         }
     }
 }
+
+class IssuePaginateCriteria(
+    page: Int,
+    size: Int,
+    val id: String? = null,
+    val name: String? = null,
+    val status: String? = null,
+    val description: String? = null,
+): PageableCriteria(page, size)

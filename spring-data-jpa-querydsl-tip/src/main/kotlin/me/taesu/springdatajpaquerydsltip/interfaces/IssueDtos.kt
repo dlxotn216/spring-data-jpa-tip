@@ -1,6 +1,5 @@
 package me.taesu.springdatajpaquerydsltip.interfaces
 
-import com.fasterxml.jackson.annotation.JsonIgnore
 import org.springframework.data.domain.PageRequest
 
 /**
@@ -18,12 +17,3 @@ open class PageableCriteria(
     private val size = if (size > 100) 100 else size
     val pageRequest = PageRequest.of(this.page - 1, this.size)
 }
-
-class IssuePaginateCriteria(
-    page: Int,
-    size: Int,
-    val id: String? = null,
-    val name: String? = null,
-    val status: String? = null,
-    val description: String? = null,
-): PageableCriteria(page, size)

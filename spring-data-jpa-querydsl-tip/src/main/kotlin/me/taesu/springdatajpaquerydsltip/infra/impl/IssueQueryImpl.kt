@@ -4,7 +4,6 @@ import com.querydsl.core.types.dsl.BooleanExpression
 import me.taesu.springdatajpaquerydsltip.domain.Issue
 import me.taesu.springdatajpaquerydsltip.domain.QIssue
 import me.taesu.springdatajpaquerydsltip.infra.IssueQuery
-import me.taesu.springdatajpaquerydsltip.interfaces.IssuePaginateCriteria
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageImpl
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport

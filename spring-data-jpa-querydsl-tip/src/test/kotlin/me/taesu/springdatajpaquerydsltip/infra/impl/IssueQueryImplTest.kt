@@ -2,7 +2,6 @@ package me.taesu.springdatajpaquerydsltip.infra.impl
 
 import me.taesu.springdatajpaquerydsltip.domain.Issue
 import me.taesu.springdatajpaquerydsltip.domain.IssueRepository
-import me.taesu.springdatajpaquerydsltip.interfaces.IssuePaginateCriteria
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
