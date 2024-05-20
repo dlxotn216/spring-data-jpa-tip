@@ -1,7 +1,7 @@
 HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
+**/*.gradle
+**/build/
+**/!gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -18,7 +18,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+**/.idea
 *.iws
 *.iml
 *.ipr
@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Kotlin ###
-.kotlin
+**/*.kotlin
