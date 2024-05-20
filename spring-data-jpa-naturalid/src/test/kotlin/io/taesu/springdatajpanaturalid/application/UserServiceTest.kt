@@ -60,7 +60,7 @@ class UserServiceTest {
     }
 
     @Test
-    fun `NaturalId로 조회 시 영속성 컨텍스트에 로드된 Entity를 반환한다`() {
+    fun `NaturalId로 조회 시 기대와 달리 영속성 컨텍스트에 로드된 Entity를 반환하지 않는다`() {
         // given
         userRepository.save(
             User(
