@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.taesu.springdatajpanaturalid.application.html">io.taesu.springdatajpanaturalid.application</a> &gt; UserServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.428s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Enhanced NaturalId로 조회 시 영속성 컨텍스트에 로드된 Entity를 반환한다()</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ID로 조회 시 영속성 컨텍스트에 로드된 Entity를 반환한다()</td>
+<td class="success">1.164s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">NaturalId로 조회 시 영속성 컨텍스트에 로드된 Entity를 반환한다()</td>
+<td class="success">0.230s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:21:55.657 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.taesu.springdatajpanaturalid.application.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:21:55.825 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.taesu.springdatajpanaturalid.SpringDataJpaNaturalidApplication for test class io.taesu.springdatajpanaturalid.application.UserServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-20T11:21:56.494+09:00  INFO 84690 --- [    Test worker] i.t.s.application.UserServiceTest        : Starting UserServiceTest using Java 21.0.1 with PID 84690 (started by itaesu in /Users/itaesu/Desktop/projects/spring-data-jpa-tip/spring-data-jpa-naturalid)
+2024-05-20T11:21:56.498+09:00  INFO 84690 --- [    Test worker] i.t.s.application.UserServiceTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-05-20T11:21:57.294+09:00  INFO 84690 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-20T11:21:57.364+09:00  INFO 84690 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-05-20T11:21:57.714+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@63c12fb0
+2024-05-20T11:21:57.731+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@63c12fb0
+2024-05-20T11:21:57.815+09:00 DEBUG 84690 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2024-05-20T11:21:57.838+09:00  INFO 84690 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-20T11:21:57.941+09:00  INFO 84690 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-20T11:21:57.982+09:00  INFO 84690 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-20T11:21:58.332+09:00  INFO 84690 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-20T11:21:58.368+09:00  WARN 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-05-20T11:21:58.369+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2024-05-20T11:21:58.374+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2024-05-20T11:21:58.374+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2024-05-20T11:21:58.375+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2024-05-20T11:21:58.375+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2024-05-20T11:21:58.375+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2024-05-20T11:21:58.376+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............10000
+2024-05-20T11:21:58.377+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2024-05-20T11:21:58.377+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2024-05-20T11:21:58.377+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2024-05-20T11:21:58.378+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=&lt;masked&gt;, profileSQL=true, logger=Slf4JLogger}
+2024-05-20T11:21:58.378+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : driverClassName.................&quot;org.h2.Driver&quot;
+2024-05-20T11:21:58.378+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2024-05-20T11:21:58.379+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2024-05-20T11:21:58.379+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2024-05-20T11:21:58.379+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................30000
+2024-05-20T11:21:58.379+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2024-05-20T11:21:58.380+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2024-05-20T11:21:58.380+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:h2:~/jpa-naturalid
+2024-05-20T11:21:58.380+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................0
+2024-05-20T11:21:58.381+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2024-05-20T11:21:58.381+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2024-05-20T11:21:58.381+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2024-05-20T11:21:58.381+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2024-05-20T11:21:58.381+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2024-05-20T11:21:58.382+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2024-05-20T11:21:58.382+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : password........................&lt;masked&gt;
+2024-05-20T11:21:58.382+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : poolName........................&quot;HikariPool-1&quot;
+2024-05-20T11:21:58.382+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2024-05-20T11:21:58.383+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2024-05-20T11:21:58.383+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2024-05-20T11:21:58.383+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2024-05-20T11:21:58.384+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2024-05-20T11:21:58.384+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2024-05-20T11:21:58.384+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : username........................&quot;sa&quot;
+2024-05-20T11:21:58.384+09:00 DEBUG 84690 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : validationTimeout...............10000
+2024-05-20T11:21:58.385+09:00  INFO 84690 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-20T11:21:58.681+09:00  INFO 84690 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.683+09:00  INFO 84690 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-20T11:21:58.788+09:00 DEBUG 84690 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2024-05-20T11:21:58.789+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.802+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn2: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.815+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn3: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.828+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn4: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.841+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn5: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.853+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn6: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.865+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn7: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.878+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn8: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.890+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn9: url=jdbc:h2:~/jpa-naturalid user=SA
+2024-05-20T11:21:58.902+09:00 DEBUG 84690 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2024-05-20T11:21:59.687+09:00  INFO 84690 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-20T11:21:59.706+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : drop table if exists app_user cascade 
+2024-05-20T11:21:59.709+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists app_user_seq
+2024-05-20T11:21:59.715+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : create sequence app_user_seq start with 1 increment by 50
+2024-05-20T11:21:59.720+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : create table app_user (user_key bigint not null, email varchar(255) not null unique, intro varchar(255), name varchar(255) not null, primary key (user_key))
+2024-05-20T11:21:59.726+09:00  INFO 84690 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-20T11:21:59.912+09:00 DEBUG 84690 --- [    Test worker] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2024-05-20T11:21:59.967+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:21:59.968+09:00 DEBUG 84690 --- [    Test worker] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2024-05-20T11:21:59.969+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:00.115+09:00 DEBUG 84690 --- [    Test worker] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2024-05-20T11:22:00.115+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:00.442+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:00.446+09:00 DEBUG 84690 --- [    Test worker] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2024-05-20T11:22:00.447+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:00.712+09:00  WARN 84690 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-20T11:22:01.177+09:00  INFO 84690 --- [    Test worker] i.t.s.application.UserServiceTest        : Started UserServiceTest in 5.097 seconds (process running for 7.095)
+2024-05-20T11:22:02.001+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.003+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1113747078&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.008+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7a7fdc1a]
+2024-05-20T11:22:02.019+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select next value for app_user_seq
+2024-05-20T11:22:02.043+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.043+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1113747078&lt;open&gt;)]
+2024-05-20T11:22:02.053+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : insert into app_user (email,intro,name,user_key) values (?,?,?,?)
+2024-05-20T11:22:02.061+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1113747078&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.061+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    37789 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1530664 nanoseconds spent preparing 2 JDBC statements;
+    2142855 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    15691925 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.062+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [io.taesu.springdatajpanaturalid.application.UserService.retrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-05-20T11:22:02.063+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.065+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2898cd46]
+2024-05-20T11:22:02.067+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.067+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.103+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.user_key=?
+2024-05-20T11:22:02.109+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.109+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.110+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.111+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.111+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.111+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.111+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.111+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.112+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.113+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.113+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.113+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.114+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.114+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.114+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.114+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.115+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.115+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.115+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.115+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.115+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.116+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.117+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.117+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.117+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.117+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.118+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.118+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.118+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.119+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.119+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.119+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.119+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.120+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.120+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.120+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.120+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.120+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.121+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.121+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.121+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.121+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.122+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.123+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.124+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.125+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.126+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.126+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.126+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.126+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.127+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.127+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.127+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.127+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.127+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.128+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.128+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.128+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.128+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.128+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.129+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.130+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.130+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.130+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.130+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.130+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.131+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.131+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.131+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.131+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.131+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.132+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.132+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.132+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.132+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.132+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.133+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.133+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.133+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.133+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.133+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.134+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.134+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.135+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.135+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.135+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.135+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.136+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.136+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.137+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.137+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.137+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.137+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.138+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.138+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.138+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.138+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.139+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.139+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.139+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.139+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.140+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.140+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.140+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.140+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.141+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.141+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.142+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.142+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.142+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.143+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.143+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.143+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.143+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.143+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.144+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.144+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.144+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.144+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.145+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.145+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.145+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.145+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.146+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.146+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.147+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.147+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.148+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.148+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.148+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.148+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.148+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.149+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.149+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.149+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.149+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.150+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.150+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.150+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.150+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.150+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.151+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.151+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.151+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.151+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.152+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.152+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.152+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.153+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.153+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.153+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.153+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.154+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.154+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.154+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.154+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.155+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.155+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.155+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.155+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.155+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.156+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1286010247&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.156+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Participating in existing transaction
+2024-05-20T11:22:02.157+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.157+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1286010247&lt;open&gt;)]
+2024-05-20T11:22:02.157+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1286010247&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.158+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    22446 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    323217 nanoseconds spent preparing 1 JDBC statements;
+    289075 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.247+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.248+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1816235787&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.248+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@38950138]
+2024-05-20T11:22:02.340+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0
+2024-05-20T11:22:02.347+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.348+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1816235787&lt;open&gt;)]
+2024-05-20T11:22:02.351+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : delete from app_user where user_key=?
+2024-05-20T11:22:02.354+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1816235787&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.354+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    49866 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    907544 nanoseconds spent preparing 2 JDBC statements;
+    1184070 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5412453 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    26202 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.373+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.373+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(810692842&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.373+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2493f9a8]
+2024-05-20T11:22:02.374+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select next value for app_user_seq
+2024-05-20T11:22:02.374+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.374+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(810692842&lt;open&gt;)]
+2024-05-20T11:22:02.375+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : insert into app_user (email,intro,name,user_key) values (?,?,?,?)
+2024-05-20T11:22:02.376+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(810692842&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.376+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    16872 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    86624 nanoseconds spent preparing 2 JDBC statements;
+    635391 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1117220 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.377+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [io.taesu.springdatajpanaturalid.application.UserService.retrieveEnhanced]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-05-20T11:22:02.377+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1725899109&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.378+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@41cec7b0]
+2024-05-20T11:22:02.386+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.398+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.398+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1725899109&lt;open&gt;)]
+2024-05-20T11:22:02.399+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1725899109&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.399+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    53594 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    345745 nanoseconds spent preparing 1 JDBC statements;
+    581778 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.399+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.400+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(382492241&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.400+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@72090a80]
+2024-05-20T11:22:02.401+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0
+2024-05-20T11:22:02.402+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.402+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(382492241&lt;open&gt;)]
+2024-05-20T11:22:02.402+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : delete from app_user where user_key=?
+2024-05-20T11:22:02.403+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(382492241&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.403+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    18200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    104484 nanoseconds spent preparing 2 JDBC statements;
+    498336 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    601564 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    6364 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.409+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.410+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(822982084&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.410+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7280785f]
+2024-05-20T11:22:02.411+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.411+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(822982084&lt;open&gt;)]
+2024-05-20T11:22:02.411+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : insert into app_user (email,intro,name,user_key) values (?,?,?,?)
+2024-05-20T11:22:02.412+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(822982084&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.412+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    23090 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    39937 nanoseconds spent preparing 1 JDBC statements;
+    263714 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    936136 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.413+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [io.taesu.springdatajpanaturalid.application.UserService.retrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2024-05-20T11:22:02.413+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(314921369&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.414+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@63f6811e]
+2024-05-20T11:22:02.437+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.440+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.442+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.445+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.447+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.450+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.453+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.455+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.458+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.460+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.462+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.464+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.466+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.468+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.470+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.473+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.474+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.476+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.479+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.481+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.483+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.485+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.487+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.488+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.491+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.493+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.495+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.496+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.499+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.500+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.502+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.504+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.506+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.509+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.511+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.513+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.515+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.517+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.519+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.521+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.523+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.525+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.527+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.528+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.530+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.532+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.534+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.536+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.537+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.539+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.542+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.544+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.545+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.547+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.551+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.553+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.555+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.557+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.559+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.560+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.563+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.565+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.566+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.567+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.568+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.570+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.571+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.572+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.573+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.574+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.575+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.576+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.578+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.579+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.580+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.581+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.582+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.584+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.585+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.587+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.588+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.590+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.592+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.593+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.595+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.597+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.599+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.601+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.603+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.605+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.608+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.610+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.612+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.614+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.616+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.618+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.621+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.622+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.624+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.625+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.626+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0 where u1_0.email=?
+2024-05-20T11:22:02.627+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.627+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(314921369&lt;open&gt;)]
+2024-05-20T11:22:02.628+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(314921369&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.628+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    22887 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    4272908 nanoseconds spent preparing 101 JDBC statements;
+    14612310 nanoseconds spent executing 101 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    452308 nanoseconds spent executing 101 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-05-20T11:22:02.629+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-05-20T11:22:02.629+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1360578555&lt;open&gt;)] for JPA transaction
+2024-05-20T11:22:02.629+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@792b0cad]
+2024-05-20T11:22:02.630+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_key,u1_0.email,u1_0.intro,u1_0.name from app_user u1_0
+2024-05-20T11:22:02.632+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2024-05-20T11:22:02.632+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1360578555&lt;open&gt;)]
+2024-05-20T11:22:02.632+09:00 DEBUG 84690 --- [    Test worker] org.hibernate.SQL                        : delete from app_user where user_key=?
+2024-05-20T11:22:02.633+09:00 DEBUG 84690 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1360578555&lt;open&gt;)] after transaction
+2024-05-20T11:22:02.633+09:00  INFO 84690 --- [    Test worker] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    20228 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    81640 nanoseconds spent preparing 2 JDBC statements;
+    726667 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    987334 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    5828 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/itaesu/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.13/979ce25f7d3096a2e82214ba7dc972a05ce7a171/byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 5. 20. 오전 11:22:02</p>
+</div>
+</div>
+</body>
+</html>
