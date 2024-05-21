@@ -1,0 +1,1 @@
+<a href="https://medium.com/@taesulee93/spring-data-jpa%EC%97%90%EC%84%9C-custom-base-repository%EB%A5%BC-%ED%86%B5%ED%95%B4-repository-%EA%B3%B5%ED%86%B5%ED%99%94-%ED%95%98%EA%B8%B0-41a5a67745ea">링크</a<
