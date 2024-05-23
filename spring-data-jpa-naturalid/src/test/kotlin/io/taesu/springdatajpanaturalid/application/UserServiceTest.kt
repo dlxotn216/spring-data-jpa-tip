@@ -23,7 +23,8 @@ import org.springframework.boot.test.context.SpringBootTest
  * @since spring-data-jpa-naturalid
  */
 @SpringBootTest
-class UserServiceTest {
+class UserServiceTest: BaseTest() {
+
     @Autowired
     private lateinit var userRepository: UserRepository
 
@@ -97,8 +98,22 @@ class UserServiceTest {
         assertThat(statistics!!.prepareStatementCount).isEqualTo(1L)
     }
 
-    @AfterEach
-    fun tearDown() {
-        userRepository.deleteAll()
+    @Test
+    fun `NaturalIdRepository 구현체의 Enhanced NaturalId로 조회 시 영속성 컨텍스트에 로드된 Entity를 반환한다`() {
+        // given
+        userRepository.save(
+            User(
+                email = "taesulee93@gmail.com",
+                name = "Tae Su, Lee",
+            )
+        )
+        statistics!!.clear()
+
+        // when
+        val result = userService.retrieveEnhancedWithNaturalId("taesulee93@gmail.com")
+
+        // then
+        assertThat(result.loadedPersistenceContext).isTrue()
+        assertThat(statistics!!.prepareStatementCount).isEqualTo(1L)
     }
 }
